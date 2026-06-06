@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MindForm - Sistema de Control de Hábitos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <div class="card box-month">
+                <h1>ABRIL</h1>
+                <p>TABLERO DE CONTROL</p>
+            </div>
+            <div class="card box-reward">
+                <div class="label-header">RECOMPENSA</div>
+                <div class="reward-text">🎟️ MEJORAR COMO PERSONA</div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card habits-container">
+                <div class="label-header">HÁBITOS DIARIOS</div>
+                <div class="habits-table">
+                    <div class="table-header">
+                        <div class="h-name">HÁBITOS</div>
+                        <div class="h-day">L</div><div class="h-day">M</div><div class="h-day">X</div>
+                        <div class="h-day">J</div><div class="h-day">V</div><div class="h-day">S</div><div class="h-day">D</div>
+                    </div>
+                    <div id="habits-body"></div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="card box-stats">
+                    <div class="label-header">RESUMEN DIARIO</div>
+                    <div class="total-score" id="main-percent">0%</div>
+                    <div class="chart-container">
+                        <canvas id="habitChart"></canvas>
+                    </div>
+                </div>
+                <div class="card box-analysis">
+                    <div class="label-header">ANÁLISIS</div>
+                    <div id="analysis-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
