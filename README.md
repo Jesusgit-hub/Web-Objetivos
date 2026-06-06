@@ -6,7 +6,7 @@ Es una web dedicada a seguir unos objetivos en la cual se va a ir marcando los o
 
 # Tecnologia Utilizadas
 
-* Jason
+* Javascript
 * Html
 * Css
 
